@@ -119,6 +119,7 @@ What if I tried to add a histogram?
 
 ```{r}
 ggplot(plot_df, aes(x = x)) + geom_histogram
+x=5
 ```
 
 
