@@ -103,7 +103,7 @@ Lists
 Tables 
 ------------------------------------------------------------
 
-First Header  | Second Header
+First Header  | Second Header 
 ------------- | -------------
 Content Cell  | Content Cell
 Content Cell  | Content Cell
@@ -114,4 +114,10 @@ After the previous code chunk, write a bullet list given the mean, median, and s
 * The median is: `r round(median(pull(practice_df, samp)),2)`,
 * The mean is: `r round(mean(pull(practice_df, samp)),2)`,
 * The SD is: `r round(sd(pull(practice_df, samp)),2)`
+
+What if I tried to add a histogram?
+
+```{r}
+ggplot(plot_df, aes(x = x)) + geom_histogram
+```
 
